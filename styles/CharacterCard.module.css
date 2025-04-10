@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.winky-rough {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.769);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.25s;
+    margin: 2rem;
+    flex-wrap: nowrap;
+    gap:3rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.avatar {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    text-align: left; 
+    width: 30%;
+}
+
+.title {
+    font-family: "Winky Rough", sans-serif;
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #424242;
+    text-align: left;
+}
