@@ -1,14 +1,77 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
     background-image: url("../../public/background.jpg");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.searchbar {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    cursor: pointer;
+}
+
+.searchbar:focus {
+    outline: none;
+    border: 1px solid #0cf300;
+}
+
+.searchbar::placeholder {
+    color: #ccc;
+}
+
+.buttonSearch {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #0cf300;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonSearch:hover {
+    background-color: #0c9f00;
+}
+
+.buttonSearch:active {
+    background-color: #0c7f00;
+}
+
+.buttonReset {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonReset:hover {
+    background-color: #c70000;
+}
+
+.buttonReset:active {
+    background-color: #a00000;
 }
 
 .grid {
@@ -17,13 +80,5 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    align-content: center;
-}
-
-.title {
-    font-family: "Winky Rough", sans-serif;
-    margin: 3rem;
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
+    gap: 2rem;
 }
