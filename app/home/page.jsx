@@ -33,7 +33,7 @@ export default function Home() {
             while (cache.size >= 5) {
                 const firstKey = cache.keys().next().value;
                 cache.delete(firstKey);
-                console.log(`🚮 Removido do cache: ${firstKey}`);
+                console.log(`🚮 Removido do cache: ${firstKey} para liberar espaço`);
             }
         };
 
