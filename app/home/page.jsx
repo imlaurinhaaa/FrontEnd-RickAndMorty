@@ -30,7 +30,7 @@ export default function Home() {
         const nextCacheKey = `${name}_${nextPageNumber}`;
 
         const cleanCacheIfNeeded = () => {
-            while (cache.size >= 3) {
+            while (cache.size >= 5) {
                 const firstKey = cache.keys().next().value;
                 cache.delete(firstKey);
                 console.log(`🚮 Removido do cache: ${firstKey}`);
