@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.winky-rough {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .container {
     background-image: url("../../public/background.jpg");
     background-attachment: fixed;
@@ -7,6 +16,7 @@
 }
 
 .title {
+    font-family: "Winky Rough", sans-serif;
     font-size: 2.5rem;
     color: white;
     text-align: center;
@@ -31,47 +41,11 @@
 
 .searchbar:focus {
     outline: none;
-    border: 1px solid #0cf300;
+    border: 1px solid #ffffff;
 }
 
 .searchbar::placeholder {
     color: #ccc;
-}
-
-.buttonSearch {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #0cf300;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.buttonSearch:hover {
-    background-color: #0c9f00;
-}
-
-.buttonSearch:active {
-    background-color: #0c7f00;
-}
-
-.buttonReset {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #ff0000;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.buttonReset:hover {
-    background-color: #c70000;
-}
-
-.buttonReset:active {
-    background-color: #a00000;
 }
 
 .grid {
@@ -81,4 +55,98 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+}
+
+.navControls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.buttonSearch,
+.buttonReset,
+.buttonNav {
+    font-family: "Winky Rough", sans-serif;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.buttonSearch {
+    background: linear-gradient(135deg, #28a745, #34d058);
+}
+
+.buttonSearch:hover {
+    background: linear-gradient(135deg, #218838, #28a745);
+    transform: scale(1.03);
+}
+
+.buttonReset {
+    background: linear-gradient(135deg, #dc3545, #ff5e6c);
+}
+
+.buttonReset:hover {
+    background: linear-gradient(135deg, #c82333, #dc3545);
+    transform: scale(1.03);
+}
+
+.buttonNav {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.buttonNav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 114, 255, 0.3);
+}
+
+.buttonNav:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 114, 255, 0.2);
+}
+
+.buttonNav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.notFound {
+    font-family: "Winky Rough", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.loading {
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+.pageIndicator {
+    font-family: "Winky Rough", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgba(20, 0, 153, 0.507);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
